@@ -58,10 +58,10 @@
                     Reglas / regulaciones
                 </x-nav-link>
             </li>
-            @auth
 
+            @auth
             <li>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarper"
                     class="flex items-center justify-between w-full py-2 px-3 font-bold text-slate-700 underline-offset-2 hover:text-blue-700 focus:outline-none rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">{{Auth::user()->name}}
                     {{Auth::user()->surname[0]}}. | {{Auth::user()->rank}}
                     <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -70,7 +70,7 @@
                             d="m1 1 4 4 4-4" />
                     </svg></button>
                 <!-- Dropdown menu -->
-                <div id="dropdownNavbar"
+                <div id="dropdownNavbarper"
                     class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
                     <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
                         <li>
