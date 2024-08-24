@@ -54,8 +54,7 @@
                 </div>
             </li>
             <li>
-                <x-nav-link href="{{asset('assets/docs/REGLAMENTO_PARA_PILOTOS.pdf')}}" target="_blank"
-                    :active="request()->routeIs('view.pilot')">
+                <x-nav-link href="{{asset('assets/docs/REGLAMENTO_PARA_PILOTOS.pdf')}}" target="_blank">
                     Reglas / regulaciones
                 </x-nav-link>
             </li>
