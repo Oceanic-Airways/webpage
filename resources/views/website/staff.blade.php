@@ -153,7 +153,7 @@
                     <div class="inset-0 grid md:grid-cols-3 items-center justify-items-center justify-center gap-5">
                         <div class="w-100">
                             <div class="rounded-full bg-[#13408b] p-5">
-                                <img src="{{asset('assets/img/staff/Lucho.jpg')}}" alt=""
+                                <img src="{{asset('assets/img/staff/Lucho.jpeg')}}" alt=""
                                     class="rounded-full h-64 w-64 ">
                             </div>
                         </div>
