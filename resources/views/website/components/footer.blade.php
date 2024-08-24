@@ -6,7 +6,7 @@ use Carbon\Carbon;
         <div class="sm:flex sm:items-center justify-center">
 
             <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-6 mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                <img src="{{asset('assets/img/OA_LOGO.png')}}" class="h-16" alt="Flowbite Logo" />
+                <img src="{{asset('assets/img/OA_logo.png')}}" class="h-16" alt="Flowbite Logo" />
                 <img src="{{asset('assets/img/VATSIM_LOGO.png')}}" class="h-16" alt="Vatim Logo" />
                 <img src="{{asset('assets/img/IvaoCo.png')}}" class="h-32" alt="Flowbite Logo" />
                 <a href="https://www.ivao.aero/" target="_blank"><img src="{{asset('assets/img/IVAOPartnerVa.svg')}}"
