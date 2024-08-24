@@ -12,7 +12,7 @@
 
 
     <section class="flex items-center flex-col text-center">
-        <div class=" md:w-4/5 w-4/5 sm:w-full grid md:grid-cols-3 justify-items-center gap-12 font-semibold mb-5"
+        <div class="md:w-4/5 w-full sm:w-full grid md:grid-cols-3 justify-items-center gap-12 font-semibold mb-5"
             data-aos="fade-up">
             <div class="bg-[#1f7be7] rounded-xl w-full grid text-center p-6 text-white">
                 <div class="text-6xl ">
@@ -27,13 +27,13 @@
                 <div class="text-4xl"><span>Horas</span></div>
             </div>
             <div class="bg-[#1f7be7] rounded-xl w-full grid text-center p-6 text-white">
-                <div class="text-6xl">
+                <div class="text-5xl md:text-6xl">
                     <span>+{{$data["distance"]}}nm</span>
                 </div>
                 <div class="text-4xl"><span>Distancia</span></div>
             </div>
         </div>
-        <div class="md:w-3/5 w-3/5 sm:w-full grid md:grid-cols-2 justify-items-center gap-12 font-semibold"
+        <div class="md:w-3/5 w-full sm:w-full grid md:grid-cols-2 justify-items-center gap-12 font-semibold"
             data-aos="fade-right">
             <div class="bg-[#1f7be7] rounded-xl w-full grid text-center p-6 text-white">
                 <div class="text-6xl">
@@ -52,7 +52,7 @@
 
 
     <div class="h-32"></div>
-    <section class="p-12" data-aos="zoom-in">
+    <section class="md:p-12" data-aos="zoom-in">
         <div x-data="{
         // Sets the time between each slides in milliseconds
         autoplayIntervalTime: 4000,
@@ -168,10 +168,10 @@
                             <div class=""><img src="{{asset('assets/img/ranks/APA.jpeg')}}" class="w-64" alt=""></div>
                         </div>
                         <div id="rank_details">
-                            <div class="text-right grid h-full">
-                                <h5 class="text-5xl font-bold flex items-center justify-end">APA</h5>
+                            <div class="text-left md:text-right grid h-full ">
+                                <h5 class="text-5xl font-bold flex items-center justify-start md:justify-end">APA</h5>
                                 <div class="">
-                                    <ul class="text-xl">
+                                    <ul class="text-xl ">
                                         <li><span class="font-semibold">Tiempo de vuelo:</span> 5 - 15 Horas</li>
                                         <li><span class="font-semibold">Flota:</span> C152 ~ C172 ~ PA28 ~ SR22</li>
                                     </ul>
@@ -308,14 +308,7 @@
                     user: 'Santiago | CEO',
                     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
                     stars: '5'
-                },
-                {
-                    imgSrc: '{{asset('assets/img/raiting/Santiago.jpg')}}',
-                    imgAlt: 'Foto de santiago',
-                    user: 'Cesar | OAS999',
-                    description: 'Cesar es ....',
-                    stars: '1'
-                },
+                }
             ],
             currentSlideIndex: 1,
             isPaused: false,
@@ -353,11 +346,11 @@
 
                 <!-- slides -->
                 <!-- Change min-h-[50svh] to your preferred height size -->
-                <div class="relative min-h-[50svh] w-full">
+                <div class="relative min-h-[150svh] md:min-h-[50svh] w-full">
 
                     <template x-for="(slide, index) in slides">
                         <div x-cloak x-show="currentSlideIndex == index + 1"
-                            class="absolute inset-0 grid md:grid-cols-3 items-center justify-items-center justify-center h-full"
+                            class="absolute inset-0 grid md:grid-cols-3 grid-cols-1 items-center justify-items-center justify-center h-full"
                             x-transition.opacity.duration.1000ms>
 
                             <div class="">

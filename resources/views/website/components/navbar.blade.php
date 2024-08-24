@@ -13,9 +13,11 @@
                     Nuestro Staff
                 </x-nav-link>
             </li>
-            <x-nav-link href="{{route('view.pilot')}}" :active="request()->routeIs('view.pilot')">
-                Pilotos
-            </x-nav-link>
+            <li>
+                <x-nav-link href="{{route('view.pilot')}}" :active="request()->routeIs('view.pilot')">
+                    Pilotos
+                </x-nav-link>
+            </li>
         </ul>
     </div>
     <!-- Brand Logo -->
@@ -28,6 +30,35 @@
     <div class="basis-1/2">
         <ul class="hidden items-center gap-4 sm:flex justify-center">
 
+            <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                    class="flex items-center justify-between w-full py-2 px-3 font-bold text-slate-700 underline-offset-2 hover:text-blue-700 focus:outline-none rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">
+                    <box-icon name='world'></box-icon>
+                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar"
+                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                    <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Ingles</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Español</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <x-nav-link href="{{asset('assets/docs/REGLAMENTO_PARA_PILOTOS.pdf')}}" target="_blank"
+                    :active="request()->routeIs('view.pilot')">
+                    Reglas / regulaciones
+                </x-nav-link>
+            </li>
             @auth
 
             <li>
@@ -93,13 +124,18 @@
         x-transition:leave="transition motion-reduce:transition-none ease-out duration-300"
         x-transition:leave-start="translate-y-0" x-transition:leave-end="-translate-y-full" id="mobileMenu"
         class="fixed max-h-svh overflow-y-auto inset-x-0 top-0 z-10 flex flex-col divide-y divide-slate-300 rounded-b-xl border-b border-slate-300 bg-slate-100 px-6 pb-6 pt-20 sm:hidden">
-        <li class="py-4"><a href="#" class="w-full text-lg font-bold text-blue-700 focus:underline"
-                aria-current="page">Products</a></li>
-        <li class="py-4"><a href="#" class="w-full text-lg font-medium text-slate-700 focus:underline">Pricing</a></li>
-        <li class="py-4"><a href="#" class="w-full text-lg font-medium text-slate-700 focus:underline">Blog</a></li>
-        <!-- CTA Button -->
-        <li class="mt-4 w-full border-none"><a href="#"
-                class="rounded-xl bg-blue-700 px-4 py-2 block text-center font-medium tracking-wide text-slate-100 hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 active:opacity-100 active:outline-offset-0">Sign
-                Up</a></li>
+        <li class="py-4">
+            <x-responsive-nav-link href="{{route('home')}}" aria-current="page">Incio
+            </x-responsive-nav-link>
+        </li>
+        <li class="py-4">
+            <x-responsive-nav-link href="{{route('view.staff')}}" aria-current="page">Staff
+            </x-responsive-nav-link>
+        </li>
+        <li class="py-4">
+            <x-responsive-nav-link href="{{asset('assets/docs/REGLAMENTO_PARA_PILOTOS.pdf')}}" aria-current="page">
+                Reglas
+            </x-responsive-nav-link>
+        </li>
     </ul>
 </nav>

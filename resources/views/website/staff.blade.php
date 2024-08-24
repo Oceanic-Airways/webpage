@@ -12,33 +12,7 @@
         </div>
         <div class="">
             <div class="grid lg:grid-cols-2 grid-cols-1 justify-center gap-6">
-                {{-- Component --}}
-                <div class="flex items-center w-full">
-                    <div class="inset-0 grid md:grid-cols-3 items-center justify-items-center justify-center gap-5">
-                        <div class="w-100">
-                            <div class="rounded-full bg-[#13408b] p-5">
-                                <img src="{{asset('assets/img/staff/Lucho.jpg')}}" alt=""
-                                    class="rounded-full h-64 w-64 ">
-                            </div>
-                        </div>
-                        <div class="row-span-2 w-full">
-                            <div class="flex flex-col">
-                                <div class="">
-                                    <h4 class="font-bold text-3xl text-[#13408b]">CO-CEO - Luis G.</h4>
-                                </div>
-                                <div class="flex justify-center flex-col gap-5 w-full">
-                                    <p class="text-center">
-                                    <ul class="text-2xl font-normal">
-                                        <li>VID: 519256</li>
-                                        <li>Callsing: OAS101</li>
-                                    </ul>
-                                    </p>
-                                </div>
-                                <img src="https://status.ivao.aero/519256.png" width="100%" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 {{-- Component --}}
                 <div class="flex items-center w-full">
                     <div class="inset-0 grid md:grid-cols-3 items-center justify-items-center justify-center gap-5">
@@ -170,6 +144,33 @@
                                     </p>
                                 </div>
                                 <img src="https://status.ivao.aero/739666.png" width="100%" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- Component --}}
+                <div class="flex items-center w-full">
+                    <div class="inset-0 grid md:grid-cols-3 items-center justify-items-center justify-center gap-5">
+                        <div class="w-100">
+                            <div class="rounded-full bg-[#13408b] p-5">
+                                <img src="{{asset('assets/img/staff/Lucho.jpg')}}" alt=""
+                                    class="rounded-full h-64 w-64 ">
+                            </div>
+                        </div>
+                        <div class="row-span-2 w-full">
+                            <div class="flex flex-col">
+                                <div class="">
+                                    <h4 class="font-bold text-3xl text-[#13408b]">Fundador | CO-CEO - Luis G.</h4>
+                                </div>
+                                <div class="flex justify-center flex-col gap-5 w-full">
+                                    <p class="text-center">
+                                    <ul class="text-2xl font-normal">
+                                        <li>VID: 519256</li>
+                                        <li>Callsing: OAS101</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <img src="https://status.ivao.aero/519256.png" width="100%" alt="">
                             </div>
                         </div>
                     </div>
