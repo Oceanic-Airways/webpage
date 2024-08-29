@@ -300,7 +300,7 @@
                     imgSrc: '{{asset('assets/img/raiting/Cesar.jpeg')}}',
                     imgAlt: 'Foto de Cesar',
                     user: 'Cesar | Director de Marketing',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt aliquid sequi unde commodi nihil, ad autem reiciendis blanditiis, molestias iure, id aliquam quia illo.',
+                    description: 'Lorem ipsum',
                     stars: '5'
                 },
                 {
