@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Website;
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Http;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
@@ -27,6 +28,7 @@ class Index extends Component
 
     public function render()
     {
+        // dd(App::getLocale());
         return view(
             'website.index',
             ["data" => $this->data]

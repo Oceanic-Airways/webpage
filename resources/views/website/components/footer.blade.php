@@ -25,7 +25,7 @@ use Carbon\Carbon;
                 {{Carbon::now()->year}} <a href="https://commarka.app/" class="hover:underline">CoMMArka
                     Studios</a></span>
         </div>
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <span id="gdpr" class="block text-[24px] text-gray-500 sm:text-center dark:text-gray-400">
             <a href="https://ivao.aero/ContactGDPR.asp"
                 class="text-[#1f6be7] hover:font-bold text-md hover:underline">GDPR Policy
                 Reglamento

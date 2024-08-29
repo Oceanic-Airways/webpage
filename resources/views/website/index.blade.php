@@ -18,19 +18,19 @@
                 <div class="text-6xl ">
                     <span>+30</span>
                 </div>
-                <div class="text-4xl"><span>Pilotos</span></div>
+                <div class="text-4xl"><span>{{__('messages.Pilots')}}</span></div>
             </div>
             <div class="bg-[#1f7be7] rounded-xl w-full grid text-center p-6 text-white">
                 <div class="text-6xl">
                     <span>+{{number_format($data["hours"],0,'.',',')}}</span>
                 </div>
-                <div class="text-4xl"><span>Horas</span></div>
+                <div class="text-4xl"><span>{{__('messages.Hours')}}</span></div>
             </div>
             <div class="bg-[#1f7be7] rounded-xl w-full grid text-center p-6 text-white">
                 <div class="text-5xl md:text-6xl">
                     <span>+{{$data["distance"]}}nm</span>
                 </div>
-                <div class="text-4xl"><span>Distancia</span></div>
+                <div class="text-4xl"><span>{{__('messages.Distance')}}</span></div>
             </div>
         </div>
         <div class="md:w-3/5 w-full sm:w-full grid md:grid-cols-2 justify-items-center gap-12 font-semibold"
@@ -39,13 +39,13 @@
                 <div class="text-6xl">
                     <span>+{{$data["pax"]}}</span>
                 </div>
-                <div class="text-4xl"><span>Pasajeros</span></div>
+                <div class="text-4xl"><span>{{__('messages.Passengers')}}</span></div>
             </div>
             <div class="bg-[#1f7be7] rounded-xl w-full grid text-center p-6 text-white">
                 <div class="text-6xl">
                     <span>+{{$data["flights"]}}</span>
                 </div>
-                <div class="text-4xl"><span>Vuelos</span></div>
+                <div class="text-4xl"><span>{{__('messages.Flights')}}</span></div>
             </div>
         </div>
     </section>
@@ -155,7 +155,7 @@
             <div class="title_container grid md:grid-cols-2" data-aos="fade-down-right">
                 <div class="flex flex-col gap-2">
                     <div class="">
-                        <h3 class="text-6xl font-bold">Rangos</h3>
+                        <h3 class="text-6xl font-bold">{{__('messages.Ranks')}}</h3>
                     </div>
                     <div class="blue_bar w-full p-2 bg-[#ffffff] rounded-full"></div>
                 </div>
@@ -172,8 +172,10 @@
                                 <h5 class="text-5xl font-bold flex items-center justify-start md:justify-end">APA</h5>
                                 <div class="">
                                     <ul class="text-xl ">
-                                        <li><span class="font-semibold">Tiempo de vuelo:</span> 5 - 15 Horas</li>
-                                        <li><span class="font-semibold">Flota:</span> C152 ~ C172 ~ PA28 ~ SR22</li>
+                                        <li><span class="font-semibold">{{__('messages.Time_flight')}}:</span> 5 - 15
+                                            Horas</li>
+                                        <li><span class="font-semibold">{{__('messages.Fleet')}}:</span> C152 ~ C172 ~
+                                            PA28 ~ SR22</li>
                                     </ul>
                                 </div>
                             </div>
@@ -187,8 +189,10 @@
                                 </h5>
                                 <div class="">
                                     <ul class="text-xl">
-                                        <li><span class="font-semibold">Tiempo de vuelo:</span> 15 a 25 Horas</li>
-                                        <li><span class="font-semibold">Flota: </span>C414 ~ C90 ~ B350 ~ DHC6 ~
+                                        <li><span class="font-semibold">{{__('messages.Time_flight')}}</span> 15 a 25
+                                            Horas</li>
+                                        <li><span class="font-semibold">{{__('messages.Fleet')}}: </span>C414 ~ C90 ~
+                                            B350 ~ DHC6 ~
                                             ATR72/ATR42</li>
                                     </ul>
                                 </div>
@@ -208,8 +212,10 @@
                                 <h5 class="text-5xl font-bold flex items-center justify-end">PCA</h5>
                                 <div class="">
                                     <ul class="text-xl">
-                                        <li><span class="font-semibold">Tiempo de vuelo:</span> 25 - 100 Horas</li>
-                                        <li><span class="font-semibold">Flota:</span> A320 ~ A20N ~ B738</li>
+                                        <li><span class="font-semibold">{{__('messages.Time_flight')}}</span> 25 - 100
+                                            Horas</li>
+                                        <li><span class="font-semibold">{{__('messages.Fleet')}}:</span> A320 ~ A20N ~
+                                            B738</li>
                                     </ul>
                                 </div>
                             </div>
@@ -223,8 +229,10 @@
                                 </h5>
                                 <div class="">
                                     <ul class="text-xl">
-                                        <li><span class="font-semibold">Tiempo de vuelo:</span> +100 Horas</li>
-                                        <li><span class="font-semibold">Flota: </span>A340 ~ A350 ~ B777 ~ B787</li>
+                                        <li><span class="font-semibold">{{__('messages.Time_flight')}}</span> +100 Horas
+                                        </li>
+                                        <li><span class="font-semibold">{{__('messages.Fleet')}}: </span>A340 ~ A350 ~
+                                            B777 ~ B787</li>
                                     </ul>
                                 </div>
                             </div>

@@ -5,17 +5,22 @@
         <ul class="hidden items-center gap-6 sm:flex justify-center">
             <li>
                 <x-nav-link href="{{route('home')}}" :active="request()->routeIs('home')">
-                    Inicio
+                    {{__('messages.Home')}}
                 </x-nav-link>
             </li>
             <li>
                 <x-nav-link href="{{route('view.staff')}}" :active="request()->routeIs('view.staff')">
-                    Nuestro Staff
+                    {{__('messages.Our_Staff')}}
                 </x-nav-link>
             </li>
             <li>
                 <x-nav-link href="{{route('view.pilot')}}" :active="request()->routeIs('view.pilot')">
-                    Pilotos
+                    {{__('messages.Pilots')}}
+                </x-nav-link>
+            </li>
+            <li>
+                <x-nav-link href="#gdpr" :active="request()->routeIs('view.pilot')">
+                    GDPR
                 </x-nav-link>
             </li>
         </ul>
@@ -33,7 +38,7 @@
             <li>
                 <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
                     class="flex items-center justify-between w-full py-2 px-3 font-bold text-slate-700 underline-offset-2 hover:text-blue-700 focus:outline-none rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">
-                    <box-icon name='world'></box-icon>
+                    {{App::getLocale()}} <box-icon class="ml-2" name='world'></box-icon>
                     <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -45,17 +50,17 @@
                     class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
                     <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Ingles</a>
+                            <a href="{{url('lang/en')}}" class="block px-4 py-2 hover:bg-gray-100">Ingles</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Español</a>
+                            <a href="{{url('lang/es')}}" class="block px-4 py-2 hover:bg-gray-100">Español</a>
                         </li>
                     </ul>
                 </div>
             </li>
             <li>
                 <x-nav-link href="{{asset('assets/docs/REGLAMENTO_PARA_PILOTOS.pdf')}}" target="_blank">
-                    Reglas / regulaciones
+                    {{__('messages.Rules_Regulations')}}
                 </x-nav-link>
             </li>
 
