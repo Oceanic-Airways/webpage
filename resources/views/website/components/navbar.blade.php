@@ -19,7 +19,8 @@
                 </x-nav-link>
             </li>
             <li>
-                <x-nav-link href="#gdpr" :active="request()->routeIs('view.pilot')">
+                <x-nav-link href="https://ivao.aero/ContactGDPR.asp" target="_blank"
+                    :active="request()->routeIs('view.pilot')">
                     GDPR
                 </x-nav-link>
             </li>
